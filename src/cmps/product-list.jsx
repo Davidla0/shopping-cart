@@ -1,6 +1,7 @@
 import { ProductPreview } from './product-preview'
 import { Link } from 'react-router-dom'
 import React from 'react'
+import { PlusMinus } from "./plus-minus";
 
 
 export function ProductList({ products }) {
@@ -11,6 +12,7 @@ export function ProductList({ products }) {
                 <Link  to={`/details/${product._id}`}>
                     <ProductPreview product={product} />
                 </Link>
+                <PlusMinus proId={product._id}/>
             </div>
         )}
     </section>
