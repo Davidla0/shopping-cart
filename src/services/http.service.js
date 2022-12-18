@@ -1,8 +1,8 @@
 import Axios from 'axios'
 
 const BASE_URL = process.env.NODE_ENV === 'production'
-    ? '/api/'
-    : '//localhost:3031/api/'
+    ? 'https://shopping-cart-back-end.onrender.com'
+    : 'https://shopping-cart-back-end.onrender.com'
 
 
 var axios = Axios.create({
