@@ -1,6 +1,6 @@
 
 import { App } from './pages/App';
-// import { ProductDetails } from './pages/ProductDetails';
+import { ProductDetails } from './pages/ProductDetails';
 
 // Routes accesible from the main navigation (in AppHeader)
 const routes = [
@@ -8,10 +8,10 @@ const routes = [
         path: '/',
         component: <App />,
     },
-    // {
-    //     path: '/details/:id',
-    //     component: <ProductDetails />,
-    // },
+    {
+        path: '/details/:id',
+        component: <ProductDetails />,
+    },
 
 
 

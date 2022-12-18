@@ -1,0 +1,12 @@
+.product-preview{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 500px;
+
+    .product-image{
+        margin-bottom: 20px;
+    }
+
+    
+}

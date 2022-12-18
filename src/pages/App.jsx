@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import { loadProducts } from "../store/product.actions";
 import { useDispatch, useSelector } from 'react-redux'
+import { ProductList } from '../cmps/product-list'
+
 export function App() {
 
   const {products} = useSelector(state => state.productModule)
@@ -14,9 +16,7 @@ export function App() {
   if(!products) return <h1>Loading .. </h1>
   return (
     <div className="App main-container">
-      {products.map(pro => 
-      <div>{pro.title}</div>
-        )}
+      <ProductList products={products}/>
     </div>
   );
 }

@@ -1,0 +1,35 @@
+.cart-list {
+    position: fixed;
+    max-width: 42%;
+    top: 50px;
+    z-index: 999;
+    background: lightgoldenrodyellow;
+    padding: 10px;
+    opacity: 0.9;
+
+    .product-cart{
+        display: flex;
+        max-height: 40px;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px;
+        border-bottom: 2px solid black;
+        margin: 10px 0px;
+        
+        >img{
+            max-width: 40px;
+            aspect-ratio: 1;
+        }
+
+        >h4{
+            flex-grow: 1;
+        }
+    }
+
+    .total{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5px;
+    }
+}
