@@ -1,8 +1,11 @@
 .product-preview{
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     min-height: 500px;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+
 
     .product-image{
         margin-bottom: 20px;

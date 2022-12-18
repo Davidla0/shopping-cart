@@ -2,6 +2,7 @@ import { ReactComponent as Cart } from '../assets/img/cart.svg';
 import { useSelector, useDispatch } from 'react-redux'
 import { useEffect } from 'react';
 import { loadCart } from '../store/product.actions';
+import { CartList } from './cart-list';
 import { useState } from 'react';
 
 export function AppHeader() {
@@ -25,6 +26,7 @@ export function AppHeader() {
         </div>
         <h4>| ShopeNow</h4>
 
+        {showCmp &&  <CartList/>}
 
     </div>
 }

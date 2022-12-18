@@ -1,10 +1,16 @@
-import { useState } from "react";
-import {useDispatch} from 'react-redux'
+import { useEffect, useState } from "react";
+import {useDispatch, useSelector} from 'react-redux'
 import { addToCart, deleteFromCart } from "../store/product.actions";
 
 export function PlusMinus({proId}) {
     let [count, setCount] = useState(0);
+    const {shoppingCart} = useSelector(state => state.productModule)
     const dispatch = useDispatch()
+
+    useEffect(() => {
+        let amount = shoppingCart.filter(pro => pro.proId === proId)
+        setCount(amount.length)
+    })
 
     function incrementCount() {
         setCount(count + 1);
